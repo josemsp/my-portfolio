@@ -6,12 +6,25 @@ body {
   min-height: 100%;
 }
 
-@layer components {
+.circle {
+  border-radius: 50%;
+}
+
+button.focus-visible\:ring-2:focus-visible {
+  box-shadow: none !important;
+}
+
+/* @layer components {
   .card {
     background-color: theme('colors.white');
     border-radius: theme('borderRadius.lg');
     padding: theme('spacing.6');
     box-shadow: theme('boxShadow.xl');
   }
-  /* ... */
-}
+
+  .layout {
+  }
+
+  header {
+  }
+} */

@@ -1,10 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
-import Portfolio from './Portfolio.tsx'
+import './styles/index.css'
+import './styles/globals.css'
+import { ThemeProvider } from './components/theme-provider.tsx'
+import Layout from './features/Layout.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Portfolio />
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <Layout />
+    </ThemeProvider>
   </React.StrictMode>,
 )

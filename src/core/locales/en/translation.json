@@ -1,5 +1,4 @@
-/* cspell: disable */
-const dictionaryEN: { [key: string]: string } = {
+{
   "Portfolio": "Portfolio",
   "System": "System",
   "Language": "Language",
@@ -18,7 +17,6 @@ const dictionaryEN: { [key: string]: string } = {
   "Certifications": "Certifications",
   "Achievements": "Achievements",
   "Resume/CV": "Resume/CV",
-  "Full Stack Developer": "Full Stack Developer",
   "Front-end Developer": "Front-end Developer",
   "Back-end Developer": "Back-end Developer",
   "Software Engineer": "Software Engineer",
@@ -51,11 +49,35 @@ const dictionaryEN: { [key: string]: string } = {
   "Download Resume": "Download Resume",
   "Get in Touch": "Get in Touch",
   "Send Message": "Send Message",
-
   "MyName": "José Salazar",
   "MyOccupation": "Full Stack Engineer",
   "MyPhrase": "I am loyal and true with mine",
   "AboutMe": "About me",
-};
-
-export default dictionaryEN;
+  "AboutMeP1": "I am a software developer with over 7 years of experience in web applications.",
+  "AboutMeP2": "Specialized:",
+  "AboutMeP3": "JavaScript | React | Node.js",
+  "AboutMeP4": "Bases de datos SQL/NoSQL",
+  "AboutMeP5": "Arquitecturas serverless",
+  "AboutMeP6": "My goal is to provide innovative solutions that improve efficiency and user experience, while continuing to develop my skills.",
+  "WorkExperience": "Work Experience",
+  "FullStackDeveloper": "Full Stack Developer",
+  "BackendDeveloper": "Backend Developer",
+  "Responsibilities": "Responsibilities",
+  "KeyAchievements": "Key Achievements",
+  "TechExp1Title1": "Backend optimization",
+  "TechExp1Experience1": "Refactoring of lambdas, improving performance and scalability.",
+  "TechExp1Title2": "Frontend Development",
+  "TechExp1Experience2": "Implementation of reusable React components, reducing development time by 30% and initial loading time by 25%.",
+  "TechExp1Title3": "Data Integration",
+  "TechExp1Experience3": "Refactoring of functions for data replication in Power BI and Google Looker Studio, enhancing data analysis flow.",
+  "TechExp2Title1": "Mi Negocio",
+  "TechExp2Experience1": "As the lead developer, I updated and improved processes for this platform and ensured the delivery of new features with high quality and within established deadlines.",
+  "TechExp2Title2": "Frontend Development",
+  "TechExp2Experience2": "Creation of a 'Do it yourself' project for Sección Amarilla users to create their own websites.",
+  "TechExp2Title3": "Openpay",
+  "TechExp2Experience3": "Creation of payment process with Openpay platform.",
+  "TechExp3Title1": "Backend",
+  "TechExp3Experience1": "Maintenance, updating, processing, and improvement of data flow for the information collection system and business portfolio of Grupo Salinas.",
+  "Years": "Years",
+  "Months": "Months"
+}

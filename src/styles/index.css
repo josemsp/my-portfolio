@@ -2,8 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100%;
+  scrollbar-gutter: stable;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Estilos para la pista de la barra de desplazamiento */
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+
+/* Estilos para el pulgar (thumb) de la barra de desplazamiento */
+body::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+#aboutMe,
+#skills,
+#experience,
+#projects,
+#contact {
+  scroll-margin-top: 5rem; /* Ajusta este valor según la altura de tu header */
+}
+
+p {
+  line-height: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .sticky-container {
+    display: flex;
+  }
+  .sticky-sidebar {
+    position: sticky;
+    top: 4rem;
+    height: calc(100vh - 4rem);
+  }
 }
 
 .circle {

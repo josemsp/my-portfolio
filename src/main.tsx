@@ -4,6 +4,7 @@ import './styles/index.css'
 import './styles/globals.css'
 import { ThemeProvider } from './components/theme-provider.tsx'
 import Layout from './features/Layout.tsx'
+import '@/helpers/i18n.ts'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

@@ -1,74 +1,129 @@
-import { ThemeSelector } from '@/components'
-import LanguageSelector from '@/components/LanguageSelector'
-import AboutMe from './AboutMe'
-import Home from './Home'
+import LayoutHeader from './LayoutHeader'
+import LayoutMain from './LayoutMain'
 
 const Layout = () => {
 
   return (
-    <div className='layout relative bg-slate-950'>
-      <header
-        className="sticky top-0 z-50 px-8 py-2 justify-end bg-slate-50 dark:bg-slate-900/90 border-slate-300/5 backdrop-blur lg:border-b lg:border-slate-900/15 dark:border-slate-50/15 flex gap-4"
-      >
-        <LanguageSelector />
-        <ThemeSelector />
-      </header>
-      <main className='container bg-slate-700 dark:bg-slate-950 grid justify-center grid-cols-1 w-full'>
-        <section id='home' className='bg-slate-200 dark:bg-slate-800 grid justify-center align-middle shadow-lg rounded-lg p-6 gap-5 '>
-          <Home />
-          <div className='flex justify-center'>
-            <AboutMe className='w-4/5' />
-          </div>
-        </section>
-
-        <section id="about">
-          <AboutMe />
-        </section>
-
-        <section id="experience">
-          <h2>Work Experience</h2>
-          <article>
-            <h3>Job Title</h3>
-            <p>Company</p>
-            <p>Start Date - Present</p>
-            <ul>
-              <li>Responsibility 1</li>
-              <li>Responsibility 2</li>
-              <li>Key achievement</li>
-            </ul>
-          </article>
-        </section>
-
-        <section id="projects">
-          <h2>Projects</h2>
-          <article>
-            <h3>Project Name</h3>
-            <p>Brief project description</p>
-            <p>Technologies used: HTML, CSS, JavaScript, etc.</p>
-            <a href="#">Link to project</a>
-          </article>
-
-        </section>
-
-        <section id="skills">
-          <h2>Technical Skills</h2>
-          <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-
-          </ul>
-        </section>
-
-        <section id="contact">
-          <h2>Contact</h2>
-          <p>Email: your@email.com</p>
-          <p>LinkedIn: <a href="#">Your LinkedIn profile</a></p>
-          <p>GitHub: <a href="#">Your GitHub profile</a></p>
-        </section>
-      </main>
+    <div className='relative bg-slate-700 dark:bg-slate-950'>
+      <LayoutHeader />
+      <LayoutMain />
       <footer></footer>
     </div>
+
+    // <div className="grid grid-rows-[auto,1fr,auto] grid-cols-[200px,1fr] gap-4 h-screen">
+    //   <div className="fixed left-0 top-0 w-64 h-full bg-[#f8f4f3] p-4 z-50 sidebar-menu transition-transform">
+    //     <a href="#" className="flex items-center pb-4 border-b border-b-gray-800">
+
+    //       <h2 className="font-bold text-2xl">LOREM <span className="bg-[#f84525] text-white px-2 rounded-md">IPSUM</span></h2>
+    //     </a>
+    //     <ul className="mt-4">
+    //       <span className="text-gray-400 font-bold">ADMIN</span>
+    //       <li className="mb-1 group">
+    //         <a href="" className="flex font-semibold items-center py-2 px-4 text-gray-900 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+    //           <i className="ri-home-2-line mr-3 text-lg"></i>
+    //           <span className="text-sm">Dashboard</span>
+    //         </a>
+    //       </li>
+    //       <li className="mb-1 group">
+    //         <a href="" className="flex font-semibold items-center py-2 px-4 text-gray-900 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100 sidebar-dropdown-toggle">
+    //           <i className='bx bx-user mr-3 text-lg'></i>
+    //           <span className="text-sm">Users</span>
+    //           <i className="ri-arrow-right-s-line ml-auto group-[.selected]:rotate-90"></i>
+    //         </a>
+    //         <ul className="pl-7 mt-2 hidden group-[.selected]:block">
+    //           <li className="mb-4">
+    //             <a href="" className="text-gray-900 text-sm flex items-center hover:text-[#f84525] before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">All</a>
+    //           </li>
+    //           <li className="mb-4">
+    //             <a href="" className="text-gray-900 text-sm flex items-center hover:text-[#f84525] before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Roles</a>
+    //           </li>
+    //         </ul>
+    //       </li>
+    //       <li className="mb-1 group">
+    //         <a href="" className="flex font-semibold items-center py-2 px-4 text-gray-900 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+    //           <i className='bx bx-list-ul mr-3 text-lg'></i>
+    //           <span className="text-sm">Activities</span>
+    //         </a>
+    //       </li>
+    //       <span className="text-gray-400 font-bold">BLOG</span>
+    //       <li className="mb-1 group">
+    //         <a href="" className="flex font-semibold items-center py-2 px-4 text-gray-900 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100 sidebar-dropdown-toggle">
+    //           <i className='bx bxl-blogger mr-3 text-lg' ></i>
+    //           <span className="text-sm">Post</span>
+    //           <i className="ri-arrow-right-s-line ml-auto group-[.selected]:rotate-90"></i>
+    //         </a>
+    //         <ul className="pl-7 mt-2 hidden group-[.selected]:block">
+    //           <li className="mb-4">
+    //             <a href="" className="text-gray-900 text-sm flex items-center hover:text-[#f84525] before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">All</a>
+    //           </li>
+    //           <li className="mb-4">
+    //             <a href="" className="text-gray-900 text-sm flex items-center hover:text-[#f84525] before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Categories</a>
+    //           </li>
+    //         </ul>
+    //       </li>
+    //       <li className="mb-1 group">
+    //         <a href="" className="flex font-semibold items-center py-2 px-4 text-gray-900 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+    //           <i className='bx bx-archive mr-3 text-lg'></i>
+    //           <span className="text-sm">Archive</span>
+    //         </a>
+    //       </li>
+    //       <span className="text-gray-400 font-bold">PERSONAL</span>
+    //       <li className="mb-1 group">
+    //         <a href="" className="flex font-semibold items-center py-2 px-4 text-gray-900 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+    //           <i className='bx bx-bell mr-3 text-lg' ></i>
+    //           <span className="text-sm">Notifications</span>
+    //           <span className=" md:block px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-red-600 bg-red-200 rounded-full">5</span>
+    //         </a>
+    //       </li>
+    //       <li className="mb-1 group">
+    //         <a href="" className="flex font-semibold items-center py-2 px-4 text-gray-900 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+    //           <i className='bx bx-envelope mr-3 text-lg' ></i>
+    //           <span className="text-sm">Messages</span>
+    //           <span className=" md:block px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-green-600 bg-green-200 rounded-full">2 New</span>
+    //         </a>
+    //       </li>
+    //     </ul>
+    //   </div>
+    //   <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-40 md:hidden sidebar-overlay"></div>
+    //   <header className="row-span-1 col-span-2 bg-blue-600 text-white p-4 text-center sticky top-0 z-10">
+    //     <button>toggle</button>
+    //   </header>
+    //   <main className="row-span-1 col-span-1 bg-white p-4">Main Content</main>
+    //   <footer className="row-span-1 col-span-2 bg-blue-600 text-white p-4 text-center">Footer</footer>
+    // </div>
+
+    // <div className="font-sans antialiased bg-gray-100">
+    //   <header className="bg-blue-600 text-white p-4 text-center sticky top-0 z-10">Header</header>
+    //   <div className="sticky-container">
+    //     <aside className="bg-gray-200 p-4 overflow-y-auto sticky-sidebar">
+    //       <nav className="space-y-2">
+    //         <a href="#section1" className="block text-blue-600 hover:underline">Go to Section 1</a>
+    //         <a href="#section2" className="block text-blue-600 hover:underline">Go to Section 2</a>
+    //         <a href="#section3" className="block text-blue-600 hover:underline">Go to Section 3</a>
+    //         <a href="#section4" className="block text-blue-600 hover:underline">Go to Section 4</a>
+    //       </nav>
+    //     </aside>
+    //     <main className="flex-1 bg-white p-4">
+    //       <section id="section1" className="mb-4">
+    //         <h2 className="text-xl font-bold">Section 1</h2>
+    //         <p>Content for section 1...</p>
+    //       </section>
+    //       <section id="section2" className="mb-4">
+    //         <h2 className="text-xl font-bold">Section 2</h2>
+    //         <p>Content for section 2...</p>
+    //       </section>
+    //       <section id="section3" className="mb-4">
+    //         <h2 className="text-xl font-bold">Section 3</h2>
+    //         <p>Content for section 3...</p>
+    //       </section>
+    //       <section id="section4" className="mb-4">
+    //         <h2 className="text-xl font-bold">Section 4</h2>
+    //         <p>Content for section 4...</p>
+    //       </section>
+    //     </main>
+    //   </div>
+    //   <footer className="bg-blue-600 text-white p-4 text-center">Footer</footer>
+    // </div>
   )
 }
 

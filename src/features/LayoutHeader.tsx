@@ -3,6 +3,7 @@ import LanguageSelector from '@/components/LanguageSelector'
 import { Button, ThemeSelector } from '@/components'
 import useTranslate from '@/hooks/useTranslate'
 import { Download } from "lucide-react"
+import { getResource } from '@/helpers'
 
 const LayoutHeader = () => {
   const { translate } = useTranslate();
@@ -16,7 +17,7 @@ const LayoutHeader = () => {
           <Menu />
           <div className='flex gap-5'>
             <a
-              href="public/CV José Manuel Salazar Pérez - English.pdf"
+              href={getResource(`CV José Manuel Salazar Pérez - English.pdf`)}
               download
             >
               <Button variant="outline">
@@ -29,7 +30,7 @@ const LayoutHeader = () => {
           </div>
         </nav>
       </section>
-    </header>
+    </header >
   )
 }
 

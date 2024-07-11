@@ -22,10 +22,20 @@ const AboutMe = () => {
             <h2 className="text-xl">{translate('MyOccupation')}</h2>
             <CopyClipboard text={email} />
             <div className='flex justify-center gap-5'>
-              <a href='https://github.com/josemsp' target="_blank" title='GitHub'>
+              <a
+                href='https://github.com/josemsp'
+                target="_blank"
+                title='GitHub'
+                rel='noreferrer'
+              >
                 <GitHub className='h-[1.5rem] w-[1.5rem]' />
               </a>
-              <a href='https://www.linkedin.com/in/jos%C3%A9-salazar-a67980a9/' target="_blank" title='Linkedin'>
+              <a
+                href='https://www.linkedin.com/in/jos%C3%A9-salazar-a67980a9/'
+                target="_blank"
+                title='Linkedin'
+                rel='noreferrer'
+              >
                 <Linkedin className='h-[1.5rem] w-[1.5rem]' />
               </a>
             </div>

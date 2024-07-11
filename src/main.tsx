@@ -8,8 +8,10 @@ import '@/helpers/i18n.ts'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <Layout />
-    </ThemeProvider>
+    <React.Suspense fallback="loading">
+      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+        <Layout />
+      </ThemeProvider>
+    </React.Suspense>
   </React.StrictMode>,
 )

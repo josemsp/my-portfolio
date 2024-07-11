@@ -2,7 +2,7 @@ name: Deploy GithHub Pages
 
 on:
   push:
-    branches: ['main', develop]
+    branches: [main, develop]
 
   workflow_dispatch:
 
@@ -60,7 +60,7 @@ jobs:
 
   Deploy:
     needs: [Build]
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/main'
     permissions:
       pages: write
       id-token: write

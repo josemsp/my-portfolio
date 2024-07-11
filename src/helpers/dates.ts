@@ -4,9 +4,15 @@ function parseDate(dateStr: string) {
   return new Date(parseInt(year), monthIndex);
 }
 
+function subtractOneMonth(date: Date): Date {
+  const newDate = new Date(date);
+  newDate.setMonth(newDate.getMonth() + 1);
+  return newDate;
+}
+
 function calculateDateDifference(startDateStr: string, endDateStr: string) {
   const start = parseDate(startDateStr);
-  const end = parseDate(endDateStr);
+  const end = subtractOneMonth(parseDate(endDateStr));
 
   let years = end.getFullYear() - start.getFullYear();
   let months = end.getMonth() - start.getMonth();

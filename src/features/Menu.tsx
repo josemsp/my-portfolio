@@ -14,7 +14,7 @@ const Menu = () => {
 
   return (
     <>
-      <div className='hidden md:flex gap-5'>
+      <div className='hidden md:flex gap-2'>
         {menuItems.map((mi, i) => (
           <a key={`menu-item-${i}`} href={mi.href}>
             <Button variant="outline">{translate(mi.label)}</Button>

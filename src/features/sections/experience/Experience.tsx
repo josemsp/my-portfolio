@@ -1,6 +1,6 @@
 import { calculateTimeFromTimePeriod } from "@/helpers";
 import useTranslate from "@/hooks/useTranslate"
-import { Award } from "lucide-react";
+import Medal from '@/assets/medal.svg?react'
 
 const workExperiences = [
   {
@@ -29,7 +29,7 @@ const workExperiences = [
   {
     company: 'Grupo Salinas',
     rol: 'BackendDeveloper',
-    period: 'Jul 2017 - Sep 2019',
+    period: 'Feb 2016 - May 2017',
     responsibility: 'Responsibilities',
     options: [
       { label: 'TechExp3Title1', description: 'TechExp3Experience1' },
@@ -52,8 +52,8 @@ const Experience = () => {
               <span>{`(${calculateTimeFromTimePeriod(we.period, translate)})`}</span>
             </div>
             <p className="flex align-middle mt-5 gap-3 dark:text-yellow-300">
-              <Award className="block dark:hidden" />
-              <Award className="hidden dark:block" />
+              <Medal className="block dark:hidden" width={25} height={25} />
+              <Medal className="hidden dark:block" />
               ** {translate(we.responsibility)}:
             </p>
             <ul>

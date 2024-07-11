@@ -2,9 +2,13 @@ import profile_pic from '@/assets/profile_picture.jpg'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import useTranslate from '@/hooks/useTranslate';
 import { Terminal } from 'lucide-react';
+import GitHub from '@/assets/github.svg?react'
+import Linkedin from '@/assets/linkedin.svg?react'
+import CopyClipboard from '@/components/CopyClipboard';
 
 const AboutMe = () => {
   const { translate } = useTranslate();
+  const email = 'jose_salazar_@outlook.com';
 
   return (
     <section id='aboutMe' className='w-full'>
@@ -16,7 +20,15 @@ const AboutMe = () => {
           <div className='flex flex-col gap-3 md:gap-5'>
             <h1 className="text-5xl dark:text-yellow-300">{translate('MyName')}</h1>
             <h2 className="text-xl">{translate('MyOccupation')}</h2>
-            <span className="italic">{`"${translate('MyPhrase')}"`}</span>
+            <CopyClipboard text={email} />
+            <div className='flex justify-center gap-5'>
+              <a href='https://github.com/josemsp' target="_blank" title='GitHub'>
+                <GitHub className='h-[1.5rem] w-[1.5rem]' />
+              </a>
+              <a href='https://www.linkedin.com/in/jos%C3%A9-salazar-a67980a9/' target="_blank" title='Linkedin'>
+                <Linkedin className='h-[1.5rem] w-[1.5rem]' />
+              </a>
+            </div>
           </div>
         </div>
         <div className='flex justify-center max-w-[90ch]'>

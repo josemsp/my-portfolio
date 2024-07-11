@@ -15,7 +15,7 @@ i18n
       escapeValue: false, // React already does escaping
     },
     backend: {
-      loadPath: '/src/core/locales/{{lng}}/{{ns}}.json',
+      loadPath: 'src/core/locales/{{lng}}/{{ns}}.json',
     },
   });
 

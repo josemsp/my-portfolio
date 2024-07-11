@@ -4,6 +4,7 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: 'https://josemsp.github.io/my-portfolio/',
   plugins: [react()],
   resolve: {
     alias: {

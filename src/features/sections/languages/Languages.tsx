@@ -11,11 +11,13 @@ const Languages = () => {
       <div className="mt-5">
         <div className="flex gap-5 items-center">
           <MEX />
-          <h3 className="font-bold">{translate('Spanish')}</h3>
+          <p className="font-bold">{translate('Spanish')}</p>-
+          <p>{translate('Native')}</p>
         </div>
         <div className="flex gap-5 items-center">
           <USA />
-          <h3 className="font-bold">{translate('English')}</h3>
+          <p className="font-bold">{translate('English')}</p>-
+          <p>{translate('Intermediate')}</p>
         </div>
       </div>
     </section>

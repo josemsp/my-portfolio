@@ -5,7 +5,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="h-[4rem]">
-      <h2 className="text-xl ">{translate('Skills')}</h2>
+      <h2 className="text-xl ">{translate('Projects')}</h2>
       <p>{translate('WorkingOnIt')}...</p>
     </section>
   )

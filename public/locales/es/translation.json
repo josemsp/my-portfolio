@@ -43,5 +43,7 @@
   "Backend": "Backend",
   "Learning": "Aprendiendo",
   "Tools": "Herramientas",
-  "WorkingOnIt":"Trabajando en ello"
+  "WorkingOnIt": "Trabajando en ello",
+  "Native": "Nativo",
+  "Intermediate": "Intermedio"
 }

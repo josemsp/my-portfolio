@@ -43,5 +43,7 @@
   "Backend": "Backend",
   "Learning": "Learning",
   "Tools": "Tools",
-  "WorkingOnIt":"Working on it"
+  "WorkingOnIt":"Working on it",
+  "Native":"Native",
+  "Intermediate": "Intermediate"
 }

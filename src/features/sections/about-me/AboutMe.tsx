@@ -11,7 +11,7 @@ const AboutMe = () => {
   const email = 'jose_salazar_@outlook.com';
 
   return (
-    <section id='aboutMe' className='w-full'>
+    <section id='aboutMe' className=''>
       <div className='grid justify-center align-middle gap-5'>
         <div className='text-center flex flex-col md:flex-row justify-between items-center gap-5 w-9/12 justify-self-center'>
           <div className="flex justify-center">

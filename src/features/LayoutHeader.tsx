@@ -15,7 +15,7 @@ const LayoutHeader = () => {
       <section className='container container-lg'>
         <nav className='flex justify-between '>
           <Menu />
-          <div className='flex gap-5'>
+          <div className='flex flex-wrap gap-5'>
             <a
               href={getResource(`CV José Manuel Salazar Pérez - English.pdf`)}
               download

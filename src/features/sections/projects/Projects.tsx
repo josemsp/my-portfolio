@@ -12,6 +12,7 @@ import AxiosIcon from '@/assets/axios.svg?react'
 import ZustandIcon from '@/assets/zustand.svg?react'
 import RxjsIcon from '@/assets/rxjs.svg?react'
 import DateFnsIcon from '@/assets/datefns.svg?react'
+import GoToIcon from '@/assets/go-to.svg?react'
 import { FunctionComponent, SVGAttributes } from "react"
 import CustomTooltip from "@/components/CustomTooltip"
 import Slider from "@/components/slider"
@@ -85,14 +86,17 @@ const Projects = () => {
           >
             <p className=" text-center">{pr.name}</p>
             <div className="grid grid-cols-1 md:grid-cols-[1fr,20%] h-full gap-7">
-              <div className="rounded-lg overflow-hidden">
+              <div className="rounded-lg overflow-hidden relative">
+                <img src={pr.image} alt={pr.name} className="object-cover w-full h-full " />
                 <a
                   href={pr.url}
                   target="_blank"
                   title={pr.name}
                   rel='noreferrer'
                 >
-                  <img src={pr.image} alt={pr.name} className="object-cover w-full h-full " />
+                  <div className="absolute bottom-3 right-3 h-9 w-9 rounded-sm bg-gray-100/70 hover:bg-gray-100 flex items-center justify-center">
+                    <GoToIcon className=" text-blue-500 h-5 w-5" />
+                  </div>
                 </a>
               </div>
               <div className="flex flex-wrap gap-2">

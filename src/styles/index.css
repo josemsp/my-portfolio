@@ -64,13 +64,17 @@ button.focus-visible\:ring-2:focus-visible {
 }
 
 .aura-image::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
   width: 200%; /* Ajusta este valor para el tamaño del aura */
   height: 200%; /* Ajusta este valor para el tamaño del aura */
-  background: radial-gradient(circle, rgba(255, 255, 0, 0.5), rgba(255, 255, 0, 0));
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 0, 0.5),
+    rgba(255, 255, 0, 0)
+  );
   border-radius: 50%;
   transform: translate(-50%, -50%);
   z-index: -1; /* Asegúrate de que el aura esté detrás de la imagen */
